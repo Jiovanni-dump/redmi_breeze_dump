@@ -1,0 +1,20 @@
+#N19 code for HQ-351805 by zhujingyi at 20240207 start
+on post-fs-data
+   mkdir /data/vendor/fpdump
+   chown system system /data/vendor/fpdump
+   chmod 0700 /data/vendor/fpdump
+   chmod 0666 /sys/bus/platform/devices/soc:xiaomi_fingerprint/fingerdown
+#N19 code for HQ-351805 by zhujingyi at 20240207 end
+service vendor.fps_hal /vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service
+    # "class hal" causes a race condition on some devices due to files created
+    # in /data. As a workaround, postpone startup until later in boot once
+    # /data is mounted.
+    class late_start
+    user system
+    group system input uhid
+#N19 code for HQ-351900 by zhujingyi at 20240123 start
+    #writepid /dev/cpuset/system-background/tasks
+#N19 code for HQ-351900 by zhujingyi at 20240123 end
+
+on property:vendor.fps_hal.restartimes=max
+    stop vendor.fps_hal
