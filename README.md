@@ -1,0 +1,14 @@
+# missi-user 16 BP2A.250605.031.A3 OS3.0.7.0.WNUINXM release-keys
+- manufacturer: xiaomi
+- platform: parrot
+- codename: breeze
+- flavor: missi-user
+- release: 16
+- id: BP2A.250605.031.A3
+- incremental: OS3.0.7.0.WNUINXM
+- tags: release-keys
+- fingerprint: Redmi/breeze_in/breeze:16/BP2A.250605.031.A3/OS3.0.7.0.WNUINXM:user/release-keys
+- is_ab: true
+- brand: Redmi
+- branch: missi-user-16-BP2A.250605.031.A3-OS3.0.7.0.WNUINXM-release-keys
+- repo: redmi_breeze_dump

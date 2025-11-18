@@ -1,0 +1,5 @@
+mcfg_hw/generic/common/Clarence/STANDALONE/LA/DSDS/mcfg_hw.mbn
+mcfg_hw/generic/common/Clarence/STANDALONE/LA/DSDS_CDMALess/mcfg_hw.mbn
+mcfg_hw/generic/common/Clarence/STANDALONE/LA/SS/mcfg_hw.mbn
+mcfg_hw/generic/common/Clarence/STANDALONE/LA/SS_CDMALess/mcfg_hw.mbn
+mcfg_hw/generic/common/Clarence/STANDALONE_PRC/LA/DSDS/mcfg_hw.mbn
